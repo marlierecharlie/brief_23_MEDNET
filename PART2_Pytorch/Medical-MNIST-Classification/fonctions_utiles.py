@@ -1,4 +1,6 @@
 def plot_history(history, title='', axs=None, exp_name=""):
+    """fonction qui permet de dessiner la courbe d'apprentissage en fonction des epochs de notre modèle."""
+    
     if axs is not None:
         ax1, ax2 = axs
     else:
