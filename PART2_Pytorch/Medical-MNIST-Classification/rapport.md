@@ -17,7 +17,7 @@ Nous utilisons un modèle de CNN. Le jeux de données provient de données médi
 
 **epochs**
 
-"""
+```
     Epoch =   0; Training loss = 0.8207; Validation loss = 0.2085
     Epoch =   1; Training loss = 0.1681; Validation loss = 0.1236
     Epoch =   2; Training loss = 0.1049; Validation loss = 0.0819
@@ -37,12 +37,13 @@ Nous utilisons un modèle de CNN. Le jeux de données provient de données médi
     Epoch =  16; Training loss = 0.0092; Validation loss = 0.0120
     Validation loss too high; halting to prevent overfitting
 
-"""
+```
+
 On note une légère tendance à l'overfitting à la fin de l'apprentissage (epochs 14 à 16). La validation loss ré-augmente progressivement, tandis que la la training loss continue de diminuer.
 
 **confusion matrix**
 
-"""
+```
     Correct predictions:  5712 of 5740
     Confusion Matrix:
     [[966   0   6   0   0   0]
@@ -53,7 +54,8 @@ On note une légère tendance à l'overfitting à la fin de l'apprentissage (epo
     [  2   0   0   0   1 973]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
+
 La class comportant le plus d'erreurs de prédictions est 'ChestCT'.
 
 **accuracy = 99.51219512195122**
@@ -66,7 +68,7 @@ t2vRatio = 1.8
 
 **epochs**
 
-"""
+```
     Epoch =   0; Training loss = 0.6016; Validation loss = 0.1977
     Epoch =   1; Training loss = 0.1635; Validation loss = 0.1312
     Epoch =   2; Training loss = 0.1081; Validation loss = 0.0838
@@ -88,12 +90,14 @@ t2vRatio = 1.8
     Epoch =  18; Training loss = 0.0070; Validation loss = 0.0112
     Epoch =  19; Training loss = 0.0066; Validation loss = 0.0117
 
-"""
+```
+
 À mesure que le nombre d'époques augmente, la Training loss diminue, ce qui indique que le modèle s'améliore dans l'ajustement des données d'entraînement. Cependant, il est important de surveiller également la Validation loss car elle mesure la capacité du modèle à généraliser à de nouvelles données. Si le modèle surajuste les données d'entraînement, la Validation loss commencera à augmenter, ce qui peut être observé à l'époque 5 où il y a une augmentation de la Validation loss.
 On ne note cepandant pas de suraprentissage.
 
 **confusion matrix**
-"""
+
+```
     Correct predictions:  5719 of 5740
     Confusion Matrix:
     [[968   0   4   0   0   0]
@@ -104,7 +108,8 @@ On ne note cepandant pas de suraprentissage.
     [  1   0   1   0   1 973]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
+
 Dans ce test, les classes les plus mal prédites sont : AbdomenCT et Hand avec 6 mauvaises prédictions dans chaques classes. 
 
 **accuracy = 99.63414634146342**
@@ -135,7 +140,7 @@ test sur de nouveaux paramètres :
 
 **epochs**
 
-"""
+```
     Epoch =   0; Training loss = 0.7846; Validation loss = 0.2093
     Epoch =   1; Training loss = 0.1629; Validation loss = 0.1243
     Epoch =   2; Training loss = 0.1069; Validation loss = 0.0891
@@ -157,12 +162,12 @@ test sur de nouveaux paramètres :
     Epoch =  18; Training loss = 0.0079; Validation loss = 0.0137
     Epoch =  19; Training loss = 0.0084; Validation loss = 0.0140
 
-"""
+```
 
 
 **confusion matrix**
 
-"""
+```
     Correct predictions:  5716 of 5740
     Confusion Matrix:
     [[968   0   4   0   0   0]
@@ -173,7 +178,7 @@ test sur de nouveaux paramètres :
     [  0   0   0   0   2 974]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
 
 **accuracy = 99.58188153310104**
 
@@ -204,7 +209,7 @@ test sur de nouveaux paramètres :
 
 **epochs**
 
-"""
+```
     Epoch =   0; Training loss = 0.7543; Validation loss = 0.2177
     Epoch =   1; Training loss = 0.1739; Validation loss = 0.1319
     Epoch =   2; Training loss = 0.1167; Validation loss = 0.0932
@@ -226,12 +231,12 @@ test sur de nouveaux paramètres :
     Epoch =  18; Training loss = 0.0077; Validation loss = 0.0116
     Epoch =  19; Training loss = 0.0072; Validation loss = 0.0112
 
-"""
+```
 
 
 **confusion matrix**
 
-"""
+```
     Correct predictions:  5722 of 5740
     Confusion Matrix:
     [[969   0   3   0   0   0]
@@ -242,7 +247,7 @@ test sur de nouveaux paramètres :
     [  1   0   1   0   1 973]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
 
 **accuracy = 99.68641114982579**
 
@@ -271,7 +276,7 @@ test sur de nouveaux paramètres
 
 **epochs** 
 
-"""
+```
     Epoch =   0; Training loss = 1.1702; Validation loss = 0.3681
     Epoch =   1; Training loss = 0.2560; Validation loss = 0.1805
     Epoch =   2; Training loss = 0.1522; Validation loss = 0.1189
@@ -293,11 +298,11 @@ test sur de nouveaux paramètres
     Epoch =  18; Training loss = 0.0098; Validation loss = 0.0120
     Epoch =  19; Training loss = 0.0090; Validation loss = 0.0116
 
-"""
+```
 
 **confusion matrix**
 
-"""
+```
     Correct predictions:  5713 of 5740
     Confusion Matrix:
     [[970   0   2   0   0   0]
@@ -308,7 +313,8 @@ test sur de nouveaux paramètres
     [  1   0   1   0   1 973]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
+
 **accuracy = 99.52961672473867**
 
 L'accuracy est moins élevée qu'avec les paramètres précédents, par conséquent, nous décidons de ne pas garder ces paramètres. On note de l'overfiting sur les dernières epochs. Il y a 7 CXR qui ont été classés en main, c'ets beaucoup. 
@@ -333,7 +339,7 @@ Paramètres de test
 
 **epochs** 
 
-"""
+```
     Epoch =   0; Training loss = 0.8573; Validation loss = 0.2208
     Epoch =   1; Training loss = 0.1714; Validation loss = 0.1277
     Epoch =   2; Training loss = 0.1046; Validation loss = 0.0790
@@ -355,11 +361,11 @@ Paramètres de test
     Epoch =  18; Training loss = 0.0068; Validation loss = 0.0120
     Epoch =  19; Training loss = 0.0065; Validation loss = 0.0103
 
-"""
+```
 
 **confusion matrix**
 
-"""
+```
     Correct predictions:  5718 of 5740
     Confusion Matrix:
     [[968   0   4   0   0   0]
@@ -370,7 +376,7 @@ Paramètres de test
     [  1   0   1   0   2 972]]
     ['AbdomenCT', 'BreastMRI', 'ChestCT', 'CXR', 'Hand', 'HeadCT']
 
-"""
+```
 
 **accuracy = 99.61672473867596**
 
