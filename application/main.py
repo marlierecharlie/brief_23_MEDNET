@@ -19,9 +19,9 @@ st.set_page_config(
 )
 
 # décris les fonctions de notre application :
-st.markdown('<h1 style="color:dark;">Reconnaissance de radios médicales</h3>', unsafe_allow_html=True)
-st.markdown('<h2 style="color:gray;">Bienvenue sur la plateforme d assistance pour vous aider à trier les radios. Chargez votre image et notre algorithme vous dira à quoi elle correspond.</h3>', unsafe_allow_html=True)
-st.markdown('<h3 style="color:gray;">Notre modèle peut reconnaître les radios suivantes :</h2>', unsafe_allow_html=True)
+st.markdown('<h1 style="color:dark;">Reconnaissance de radios médicales</h1>', unsafe_allow_html=True)
+st.markdown('<h2 style="color:gray;">Bienvenue sur la plateforme d assistance pour vous aider à trier les radios. Chargez votre image et notre algorithme vous dira à quoi elle correspond.</h2>', unsafe_allow_html=True)
+st.markdown('<h3 style="color:gray;">Notre modèle peut reconnaître les radios suivantes :</h3>', unsafe_allow_html=True)
 st.markdown('<h3 style="color:gray;">AbdomenCT, BreastMRI, ChestCT, CXR, Hand and HeadCT</h3>', unsafe_allow_html=True)
 
 
@@ -61,7 +61,7 @@ if uploaded_file is not None:
     category = categories[predicted]
 
     # afficher les prédictions
-    st.write('Prediction:', category)
+    st.markdown(f'<h3 style="color:dark; padding: 10px; background-color: skyblue;">Prediction:  {category} </h3>', unsafe_allow_html=True)
 
 
 
